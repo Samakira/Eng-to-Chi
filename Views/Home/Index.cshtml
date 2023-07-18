@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Translate Text";
+}
+
+<h1>Translate Text</h1>
+
+<form method="post" asp-controller="Home" asp-action="Index" enctype="multipart/form-data">
+    <label for="fileInput">File to translate:</label>
+    <input type="file" id="fileInput" name="fileInput">
+    <input type="submit" value="Download Translated Text">
+    <label for="FileOutput"> @Model.Test</label>
+</form>
